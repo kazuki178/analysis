@@ -15,6 +15,8 @@ def check(text,repeat):
         if ''.join(password)==target: # 生成したパスワードが目標のパスワードと一致するか確認
             return ''.join(password) #一致した場合のみパスワードをreturn 
         
+        
+
 # 解析実行判断関数
 def yes_no_input():
     while True:
@@ -27,7 +29,7 @@ def yes_no_input():
 
 if yes_no_input():
     start = time.time() # 時間(s)計測開始
-    pw = check(chars,3) # パスワード解析関数の呼び出し 第二引数は解析する文字数
+    pw = check(chars,4) # パスワード解析関数の呼び出し 第二引数は解析する文字数
     if pw is None:
         print('失敗')
     else:
